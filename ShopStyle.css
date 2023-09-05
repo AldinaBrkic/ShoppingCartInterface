@@ -57,7 +57,7 @@
 	height: 95px;
 	margin-left: 41px;
 	border: none;
-	background-image: url("heels1.jpg");
+	background-image: url("./assets/heels1.jpg");
 	background-repeat: no-repeat;
 	vertical-align: top;
 }
@@ -68,7 +68,7 @@
 	height: 95px;
 	margin-left: 41px;
 	border: none;
-	background-image: url("heels2.jpg");
+	background-image: url("./assets/heels2.jpg");
 	background-repeat: no-repeat;
 	vertical-align: top;
 }
@@ -79,7 +79,7 @@
 	height: 95px;
 	border: none;
 	margin-left: 41px;
-	background-image: url("heels3.jpg");
+	background-image: url("./assets/heels3.jpg");
 	background-repeat: no-repeat;
 	vertical-align: top;
 }
@@ -89,7 +89,7 @@
 	height: 95px;
 	border: none;
 	margin-left: 41px;
-	background-image: url("fructis.jpg");
+	background-image: url("./assets/fructis.jpg");
 	background-repeat: no-repeat;
 	vertical-align: top;
 }
@@ -99,7 +99,7 @@
 	height: 95px;
 	border: none;
 	margin-left: 41px;
-	background-image: url("dress.jpg");
+	background-image: url("./assets/dress.jpg");
 	background-repeat: no-repeat;
 	vertical-align: top;
 }
@@ -110,7 +110,7 @@
 	height: 95px;
 	border: none;
 	margin-left: 41px;
-	background-image: url("th.jfif");
+	background-image: url("./assets/th.jfif");
 	background-repeat: no-repeat;
 	vertical-align: top;
 }
@@ -120,7 +120,7 @@
 	height: 95px;
 	border: none;
 	margin-left: 41px;
-	background-image: url("th1.jpg");
+	background-image: url("./assets/th1.jpg");
 	background-repeat: no-repeat;
 	vertical-align: top;
 }
@@ -130,7 +130,7 @@
 	height: 95px;
 	border: none;
 	margin-left: 41px;
-	background-image: url("libbyPage.jpg");
+	background-image: url("./assets/libbyPage.jpg");
 	background-repeat: no-repeat;
 	vertical-align: top;
 }
@@ -140,7 +140,7 @@
 	height: 95px;
 	border: none;
 	margin-left: 41px;
-	background-image: url("danielaStil.jpg");
+	background-image: url("./assets/danielaStil.jpg");
 	background-repeat: no-repeat;
 	vertical-align: top;
 }
@@ -150,7 +150,7 @@
 	height: 95px;
 	border: none;
 	margin-left: 41px;
-	background-image: url("th2.jpg");
+	background-image: url("./assets/th2.jpg");
 	background-repeat: no-repeat;
 	vertical-align: top;
 }
@@ -174,7 +174,7 @@
     width: 69px;
     height: 22px;
 	margin-top: 5px;
-	background-image: url("fiveStars.jpg");
+	background-image: url("./assets/fiveStars.jpg");
 	background-repeat: no-repeat;
 }
 
