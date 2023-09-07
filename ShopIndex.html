@@ -5,15 +5,49 @@
 	</head>
 	<body>	
 		<div class="dashboard">
+			
 			<div class="navLinks">Shopping Cart Interface
-				<div class="searchElements"></div>
+				<div class="menu" id="getBurgerElements">
+					<div class="menuElements" id="mE1" onclick="homePage()">HOME</div>
+					<div class="menuElements" id="mE2" onclick="bankCard()">CARDS</div>
+					<div class="menuElements" id="mE3" onclick="account()">LOG IN</div>
+				</div>
+				<div class="menuElements2" id="mE22">
+						<input class="name" type="text" placeholder="First Name" id="name"/>
+						<input class="name" type="text" placeholder="Last Name" id="lastName"/>
+						<input class="name" type="number" placeholder="Number Card" id="numberCard"/>
+						<input class="name" type="numebr" placeholder="Expiration date" id="expirationDate"/>
+						<input class="name" type="number" placeholder="CVC" id="cvc"/>
+						<div class="CVC">I hereby confirm that I agree with the General Terms and Conditions
+							<input type="checkbox" class="check" placeholder="CVC" id="check"/>
+						</div>
+						<div class="type">
+							<div class="payArticle" onclick="pay()" id="payArticle">Pay</div>
+							<div class="giveUp" onclick="giveUp()" id="giveUp">Give Up</div>
+						</div>
+					</div>
+					<div class="searchElements">
+						<div class="search">
+							<input type="button" class="icon" onclick="searchText()"/>
+							<div class="input">
+								<input type="text"  placeholder="Search" id="mySearch">
+							</div>
+							<span class="clear" onclick="document.getElementById('mySearch').value = ''"></span>
+						</div>
+						<div class="burger" id="burger" onclick="burgersMenu()">
+							<div class="burgers"></div>
+							<div class="burgers"></div>
+							<div class="burgers"></div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="holder">
+			<div class="holder" id="holder">
 				<div class="getThis">
 					<div class="shop">
 						<div class="buy1" id="heels"></div>
 						<div class="conteiner">
-							<div class="article">Heels</div>
+							<div class="article" id="heels1">Heels</div>
 							<div class="costs">$15</div>
 							<div class="star"></div>
 						</div>
@@ -22,7 +56,7 @@
 					<div class="shop">
 						<div class="buy2"></div>
 						<div class="conteiner">
-							<div class="article">Heels</div>
+							<div class="article" id="heels2">Heels</div>
 							<div class="costs">$20</div>
 							<div class="star"></div>
 						</div>
@@ -31,7 +65,7 @@
 					<div class="shop">
 						<div class="buy3"></div>
 						<div class="conteiner">
-							<div class="article">Heels</div>
+							<div class="article"  id="heels3">Heels</div>
 							<div class="costs">$25</div>
 							<div class="star"></div>
 						</div>
@@ -40,7 +74,7 @@
 					<div class="shop">
 						<div class="buy4"></div>
 						<div class="conteiner">
-							<div class="article">Fructis</div>
+							<div class="article"  id="fructis">Fructis</div>
 							<div class="costs">$1</div>
 							<div class="star"></div>
 						</div>
@@ -49,7 +83,7 @@
 					<div class="shop">
 						<div class="buy5"></div>
 						<div class="conteiner">
-							<div class="article">Dress</div>
+							<div class="article" id="dress">Dress</div>
 							<div class="costs">$30</div>
 							<div class="star"></div>
 						</div>
@@ -60,7 +94,7 @@
 					<div class="shop">
 						<div class="buy6"></div>
 						<div class="conteiner">
-							<div class="article">Necklace</div>
+							<div class="article" id="necklace1">Necklace</div>
 							<div class="costs">$10</div>
 							<div class="star"></div>
 						</div>
@@ -69,7 +103,7 @@
 					<div class="shop">
 						<div class="buy7"></div>
 						<div class="conteiner">
-							<div class="article">Necklace</div>
+							<div class="article"  id="necklace2">Necklace</div>
 							<div class="costs">$60</div>
 							<div class="star"></div>
 						</div>	
@@ -78,7 +112,7 @@
 					<div class="shop">
 						<div class="buy8"></div>
 						<div class="conteiner">
-							<div class="article">Bazen-Libby Page</div>
+							<div class="article" id="libby">Bazen-Libby Page</div>
 							<div class="costs">$5</div>
 							<div class="star"></div>
 						</div>
@@ -87,7 +121,7 @@
 					<div class="shop">
 						<div class="buy9"></div>
 						<div class="conteiner">
-							<div class="article">Voleti opet-Daniela Still</div>
+							<div class="article" id="daniela">Voleti opet-Daniela Still</div>
 							<div class="costs">$5</div>
 							<div class="star"></div>
 						</div>
@@ -96,7 +130,7 @@
 					<div class="shop">
 						<div class="buy10"></div>
 						<div class="conteiner">
-							<div class="article">Picture for the wall</div>
+							<div class="article" id="picture">Picture for the wall</div>
 							<div class="costs">$30</div>
 							<div class="star"></div>
 						</div>
@@ -105,7 +139,7 @@
 				</div>
 			</div>
 			
-			<div class="getPopular">
+			<div class="getPopular" id="getPopular">
 				<div class="mostPopular"></div>
 				<div class="title">Most popular</div>
 				<div class="mostPopular"></div>
@@ -137,3 +171,4 @@
 		<script src="ShopScript.js"></script>
 	</body>
 </html>
+
