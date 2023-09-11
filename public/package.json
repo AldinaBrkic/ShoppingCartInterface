@@ -1,0 +1,17 @@
+{
+  "name": "npm-init-package",
+  "version": "1.0.0",
+  "description": "ShopCartInterface",
+  "main": "ShopScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "package",
+    "package.json",
+    "npm",
+    "init"
+  ],
+  "author": "Aldina Brkic",
+  "license": "ISC"
+}
