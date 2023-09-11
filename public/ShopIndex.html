@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="ShopStyle.css"/>
+	</head>
+	<body>	
+		<div class="dashboard">
+			
+			<div class="navLinks">Shopping Cart Interface
+				<div class="menu" id="getBurgerElements">
+					<div class="menuElements" id="mE1" onclick="homePage()">HOME</div>
+					<div class="menuElements" id="mE2" onclick="bankCard()">CARDS</div>
+					<div class="menuElements" id="mE3" onclick="account()">LOG IN</div>
+				</div>
+				<div class="menuElements2" id="mE22">
+					<div class="center">
+						<div class="name_name">
+							<input class="nameFirst" type="text" placeholder="First Name" id="name" onkeydown="getAll(this)"/>
+							<div class="error_name"  id="error_name"></div>
+						</div>
+						<div class="last_name">
+							<input class="lastName" type="text" placeholder="Last Name" id="lastName"  onkeydown="getAll(this)"/>
+							<div class="error_lastName"  id="error_lastName"></div>
+						</div>
+					</div>
+					<div class="center">
+						<div class="number_card">
+							<input class="numberCard" type="number" placeholder="Number Card" id="numberCard" onkeydown="getAll(this)"/>
+							<div class="error_card"  id="error_card"></div>
+						</div>
+						<div class="expiration_date">
+							<input class="expirationDate" type="numebr" placeholder="Expiration date" id="expirationDate" onkeydown="getAll(this)"/>
+							<div class="error_date"  id="error_date"></div>
+						</div>
+					</div>
+					<div class="center">
+						<div class="cvc_code">
+							<input class="cvcCode" type="number" placeholder="CVC" id="cvcCode"  onkeydown="getAll(this)"/>
+							<div class="error_cvcCode"  id="error_cvcCode"></div>
+						</div>
+					</div>
+					<div class="CVC">I hereby confirm that I agree with the General Terms and Conditions
+						<input type="checkbox" class="check" placeholder="CVC" id="check"/>
+						<div class="error_checkbox"  id="error_checkbox"></div>
+					</div>
+					<div class="type">
+						<input type="button" class="payArticle" onclick="payArticles()" onkeyup="getAll()" id="payArticle" value="Pay"/>
+						<div class="giveUp" onclick="backPrevPage()" id="giveUp">Give Up</div>
+					</div>
+				</div>
+				<div class="cardIsAccepted" id="cardIsAccepted" onkeydown="getAll(this)">
+					<div class="accepted">Your card has been accepted!</div>
+				</div>
+				<div class="searchElements">
+					<div class="search">
+						<input type="button" class="icon" onclick="searchText()"/>
+						<div class="input">
+							<input type="text"  placeholder="Search" id="mySearch">
+						</div>
+						<span class="clear" onclick="document.getElementById('mySearch').value = ''"></span>
+					</div>
+					<div class="burger" id="burger" onclick="burgersMenu()">
+						<div class="burgers"></div>
+						<div class="burgers"></div>
+						<div class="burgers"></div>
+					</div>
+				</div>
+			</div>
+			<div class="holder" id="holder">
+				<div class="getThis">
+					<div class="shop">
+						<div class="buy1" id="heels"></div>
+						<div class="conteiner">
+							<div class="article" id="heels1">Heels</div>
+							<div class="costs">$15</div>
+							<div class="star"></div>
+						</div>
+						<input type="button" class="buy" value="Buy" id="1stArticle"/>
+					</div>
+					<div class="shop">
+						<div class="buy2"></div>
+						<div class="conteiner">
+							<div class="article" id="heels2">Heels</div>
+							<div class="costs">$20</div>
+							<div class="star"></div>
+						</div>
+						<input type="button" class="buy" value="Buy" id="2ndArticle"/>
+					</div>
+					<div class="shop">
+						<div class="buy3"></div>
+						<div class="conteiner">
+							<div class="article"  id="heels3">Heels</div>
+							<div class="costs">$25</div>
+							<div class="star"></div>
+						</div>
+						<input type="button" class="buy" value="Buy" id="3rdArticle"/>
+					</div>
+					<div class="shop">
+						<div class="buy4"></div>
+						<div class="conteiner">
+							<div class="article"  id="fructis">Fructis</div>
+							<div class="costs">$1</div>
+							<div class="star"></div>
+						</div>
+						<input type="button" class="buy" value="Buy" id="4thArticle"/>
+					</div>
+					<div class="shop">
+						<div class="buy5"></div>
+						<div class="conteiner">
+							<div class="article" id="dress">Dress</div>
+							<div class="costs">$30</div>
+							<div class="star"></div>
+						</div>
+						<input type="button" class="buy" value="Buy" id="5thArticle"/>
+					</div>
+				</div>
+				<div class="getThis">
+					<div class="shop">
+						<div class="buy6"></div>
+						<div class="conteiner">
+							<div class="article" id="necklace1">Necklace</div>
+							<div class="costs">$10</div>
+							<div class="star"></div>
+						</div>
+						<input type="button" class="buy" value="Buy" id="6thArticle"/>
+					</div>
+					<div class="shop">
+						<div class="buy7"></div>
+						<div class="conteiner">
+							<div class="article"  id="necklace2">Necklace</div>
+							<div class="costs">$60</div>
+							<div class="star"></div>
+						</div>	
+						<input type="button" class="buy" value="Buy" id="7thArticle"/>
+					</div>
+					<div class="shop">
+						<div class="buy8"></div>
+						<div class="conteiner">
+							<div class="article" id="libby">Bazen-Libby Page</div>
+							<div class="costs">$5</div>
+							<div class="star"></div>
+						</div>
+						<input type="button" class="buy" value="Buy" id="8thArticle"/>
+					</div>
+					<div class="shop">
+						<div class="buy9"></div>
+						<div class="conteiner">
+							<div class="article" id="daniela">Voleti opet-Daniela Still</div>
+							<div class="costs">$5</div>
+							<div class="star"></div>
+						</div>
+						<input type="button" class="buy" value="Buy" id="9thArticle"/>
+					</div>
+					<div class="shop">
+						<div class="buy10"></div>
+						<div class="conteiner">
+							<div class="article" id="picture">Picture for the wall</div>
+							<div class="costs">$30</div>
+							<div class="star"></div>
+						</div>
+						<input type="button" class="buy" value="Buy" id="10thArticle"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="getPopular" id="getPopular">
+				<div class="mostPopular"></div>
+				<div class="title">Most popular</div>
+				<div class="mostPopular"></div>
+				<div class="moveSlider">
+					<div class="slider">
+						<div class="description">
+							<div class="getImages" id="images">
+								<div class="allImage1" id="image1" src=".assets/image1.jpg"></div>
+								<div class="allImage2" id="image2" src=".assets/image2.jpg"></div>
+								<div class="allImage3" id="image3" src=".assets/image3.jpg"></div>
+							</div>
+							<div>
+								<div class="teddybear"> #C22- 13" EMBROIDERY EYE BEAR
+									<div class="price">Price:$5.95</div>
+									<div class="onSale"> On Sale:</div>
+									<div class="getBlock">
+										<div class="sale">$3.50</div>
+										<input type="button" class="buyBear" value="Buy" id="11thArticle"/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<input class="btnPrev" type="button" id="prev" value="<" onclick="btnPrev()"/>
+						<input class="btnNext" type="button" id="next" value=">" onclick="btnNext()"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="ShopScript.js"></script>
+	</body>
+</html>
